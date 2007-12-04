@@ -320,7 +320,7 @@ BuildRequires:	%{name}-gnat >= 3.1, %{libgnat_name} >= 3.1
 Requires:	%{name}-cpp = %{version}-%{release}
 # FIXME: We need a libgcc with 3.4 symbols
 Requires:	%{libgcc_name_orig} >= 3.3.2-5mdk
-Prereq:		/sbin/install-info
+Prereq:		info-install
 Prereq:		/usr/sbin/update-alternatives
 BuildRequires:	gettext, flex, bison
 BuildRequires:	texinfo >= 4.1
@@ -702,7 +702,7 @@ Group:		Development/C
 Obsoletes:	gcc%{branch}-cpp
 Provides:	gcc%{branch}-cpp = %{version}-%{release}
 %endif
-Prereq:		/sbin/install-info
+Prereq:		info-install
 Prereq:		/usr/sbin/update-alternatives
 
 %description cpp
